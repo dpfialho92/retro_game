@@ -1,0 +1,286 @@
+/* Estilos gerais */
+body {
+    background: linear-gradient(to right, #E85D3D, #F28C62); 
+    background-image: url('../public/images/fundo1.png'); /* Imagem de fundo */
+    background-size: cover; /* Garante que a imagem inteira apareça */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center; /* Centraliza a imagem de fundo */
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+   
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Evitar rolagem na página */
+}
+
+/* Fundo gradiente de vermelho para preto (da esquerda superior para a direita inferior) */
+
+ .gradient-background {
+     
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Garante que a imagem inteira apareça */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-color: #E85D3D ; /* Cor de fundo padrão */ 
+    padding: 0px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+}  
+
+
+/* Container principal */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px; /* Diminuir o espaçamento interno */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Ícones das redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-bottom: 10px; /* Reduzir o espaço entre os ícones e o próximo conteúdo */
+}
+
+.social-icons a {
+    color:  #0ad6f1;
+    margin: 0 20px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover nos ícones das redes sociais */
+.social-icons a:hover {
+    color: rgb(247, 0, 255); /* Muda a cor para laranja quando o mouse passa sobre os ícones */
+}
+
+.social-icons :visited {
+    color: #7303cf; /* Cor dos links visitados */
+}
+
+.titulo-Cardapio{
+    align-items: center; 
+    justify-content: center; /* <-- centraliza horizontalmente */
+    gap: 10px; /* Espaçamento entre os itens do cardápio */
+    display: flex;
+    background-color: rgba(253, 198, 246, 0.582); /* Transparência */
+    font-size: 24px; /* Tamanho da fonte */
+    border-radius: 8px;
+    padding: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100px;    /* Define a altura da caixa do título */
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */
+}
+
+.titulo-Cardapio a{
+    
+   /* color: rgb(230, 84, 0); */
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    /*text-shadow: black 1px 0px 0px; /* Sombra do texto */
+    text-align: center; /* Centraliza o texto */ 
+    margin-top: 10px; /* Espaçamento acima do título */ 
+    margin-bottom: 10px; /* Espaçamento abaixo do título */ 
+
+    
+    /* Gradiente no texto */
+    background: linear-gradient(80deg,#ff4edb,#a200ff, #00cfff); /* azul, roxo, rosa */
+    background-clip: text; /* Faz o gradiente aparecer no texto */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    -webkit-text-fill-color: transparent; /* Faz o texto ficar transparente */
+    -webkit-text-stroke-color: #000000; /* Cor da sombra do texto */
+    -webkit-text-stroke-width: 2px; /* espessura Sombra do texto */
+    
+} 
+
+
+
+.logo-img {
+    width: 120px; /* tamanho pra imagem */
+    height: auto;
+  }
+
+
+
+/* Cardápio */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3,3fr); /* Responsivo */
+    gap: 15px; /* Espaçamento entre os itens do cardápio */
+    align-items: center;
+    background-color: rgba(253, 198, 246, 0.582); /* Transparência */
+    border-radius: 8px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(7, 7, 7);
+    font-weight: 400;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1px; /* Espaçamento interno do cardápio */
+    margin-left: 5px; /* Espaçamento à esquerda do cardápio */
+    margin-right: 5px; /* Espaçamento à direita do cardápio */
+}
+
+/* Item de cardápio */
+
+
+
+.quantidade-input {
+    background-color: white; /* muda o fundo pra branco */
+    color: black;            /* muda a cor do texto (opcional) */
+    border: 1px solid #383636;  /* borda opcional pra destacar */
+    padding: 5px;            /* espaço interno pra ficar mais bonito */
+    border-radius: 4px;      /* cantos levemente arredondados */
+    width: 80px;           /* largura fixa */
+}
+  
+
+
+
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(181, 212, 247, 0.534);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffff, 0 0 40px #ff00ff;
+  }
+  
+
+.menu-item h3 {
+    font-size: 16px;
+    color: #6607be;
+    margin: 10px 0 5px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #090c96;
+    margin-bottom: 10px;
+}
+
+.menu-item-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #f002f8;
+    background-color: rgba(10, 10, 10, 0.055);
+
+}  
+
+.quantidade-input {
+    background-color: white;
+    color: black;
+    border: 1px solid #383636;
+    padding: 6px;
+    border-radius: 6px;
+    width: 80px;
+    text-align: center;
+    box-shadow: 0 0 5px #f002f8;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info input {
+    width: 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 5px;
+    font-size: 14px;
+}
+
+.menu-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Botão */
+button {
+    background-color: #e2f10a;
+    color: rgb(12, 12, 12);
+    padding: 10px 20px;
+    border: none;
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Diminuir espaço entre o botão e os itens */
+}
+
+button:hover {
+    background-color: #fa0909;
+    color: white;
+}
+
+/* Resumo do pedido */
+.order-summary {
+    background-color: rgba(234, 241, 230, 0.8); /* Transparência */
+    padding: 20px;
+    margin-top: 10px;
+    border: 2px solid #c1d7c4;
+    border-radius: 8px;
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 10px; /* Diminuir o espaço entre o resumo e o footer */
+    margin-left: auto;
+    margin-right: auto; /* Garantir que fique centralizado */
+}
+
+/* Alinha o resumo do pedido com o tamanho da div do cardápio */
+#resumoPedido {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #6607be;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Ajuste o espaçamento entre o conteúdo e o footer */
+}
+
+footer a {
+    color:  #00ffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
