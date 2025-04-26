@@ -4,12 +4,12 @@ const itens = [
     {nome: "Gameboy Color", preco: 450.0, imagem: "/public/images/gbc.png"},
     {nome: "Gameboy Advance", preco: 500.0, imagem: "/public/images/gba.png"}, 
     {nome: "Gameboy Advance SP", preco: 600.0, imagem: "/public/images/gbasp.png"},
-    {nome: "Playstation 1", preco: 250.0, imagem: "/public/images/ps1.png"},
-    {nome: "Playstation 2", preco: 400.0, imagem: "/public/images/ps2.png"},
+    {nome: "Playstation 1", preco: 350.0, imagem: "/public/images/ps1.png"},
+    {nome: "Playstation 2", preco: 300.0, imagem: "/public/images/ps2.png"},
     {nome: "Playstation 3", preco: 600.0, imagem: "/public/images/ps3.png"},
     {nome: "Gamecube", preco: 1200.0, imagem: "/public/images/gamecube.png"},
     {nome: "Nintendo Wii", preco: 450.0, imagem: "/public/images/wii.png"},
-    {nome: "Super Nintendo", preco: 800.0, imagem: "/public/images/snes.png"},
+    {nome: "Super Nintendo", preco: 900.0, imagem: "/public/images/snes.png"},
     
 ];
 
